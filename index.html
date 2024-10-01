@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alura Books</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700&display=swap"
       rel="stylesheet"
     />
 
@@ -51,13 +56,26 @@
           alt="Logo da Alurabooks"
           class="container__imagem"
         />
+        <h1 class="container__titulo">
+          <b class="container__titulo--negrito">Alura</b>Books
+        </h1>
       </div>
+
+      <ul class="opcoes">
+        <li class="opcoes__item">Categorias</li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Favoritos</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Minha Estante</a>
+        </li>
+      </ul>
 
       <div class="container">
         <a href="#"
           ><img
             src="images/Favoritos.svg"
-            class="container__imagem"
+            class="container__imagem container__imagem-favoritos"
             alt="Ícone de Coração simbolizando Meus Favoritos"
         /></a>
         <a href="#"
@@ -182,8 +200,7 @@
       </div>
     </section>
 
-
-    <section class="carrossel"></section>
+    <section class="carrossel">
       <h2 class="carrossel__titulo">Mais Vendidos</h2>
       <!-- Slider main container -->
       <div class="swiper">
@@ -241,13 +258,16 @@
         <div class="card__descricao">
           <!-- Coluna 1 -->
           <div class="descricao">
-            <img class="descricao__avaliacao" src="images/Estrelinhas.svg" alt="Estrelas de avaliação do autor">
-            <h3 class="descricao__titulo">
-              Autora do Mês
-            </h3>
+            <img
+              class="descricao__avaliacao"
+              src="images/Estrelinhas.svg"
+              alt="Estrelas de avaliação do autor"
+            />
+            <h3 class="descricao__titulo">Autora do Mês</h3>
             <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
             <p class="descricao__texto">
-              Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+              Analista de sistemas e escritora, Juliana é especialista em
+              Front-End.
             </p>
           </div>
           <!-- Coluna 2 -->
@@ -280,7 +300,7 @@
     </section>
 
     <section class="topicos">
-      <h2 class="topicos__titulo" >TÓPICOS VISITADOS RECENTEMENTE</h2>
+      <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
       <ul class="topicos__lista">
         <li class="topicos__item">
           <a href="#" class="topicos__link">Android</a>
@@ -311,11 +331,17 @@
 
     <section class="contato">
       <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-      <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-      <input class="contato__email" type="email" placeholder="Cadastre seu email">
+      <p class="contato__texto">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+      <input
+        class="contato__email"
+        type="email"
+        placeholder="Cadastre seu email"
+      />
     </section>
 
-    <hr>
+    <hr />
 
     <footer class="rodape">
       <h2 class="rodape__titulo">Grupo Alura</h2>
