@@ -101,4 +101,19 @@
   .cabecalho__menu-hamburguer {
     display: none;
   }
+
+  #opcoes-menu {
+    display: none;
+  }
+
+  .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 16em;
+  }
+
+  .opcoes__botao:checked ~ .lista-menu {
+    display: block;
+  }
 }
